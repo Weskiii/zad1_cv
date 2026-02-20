@@ -1,0 +1,130 @@
+:root {
+  --bg: #f6f8fc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --primary: #2563eb;
+  --primary-2: #1d4ed8;
+  --border: #e2e8f0;
+  --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  padding: 30px;
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center; /* wyśrodkowanie większości tekstu */
+}
+
+/* GŁÓWNE IMIĘ */
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+/* NAGŁÓWKI SEKCJI */
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* SEKCJE */
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  margin: 20px 0;
+}
+
+/* Zdjęcie wyśrodkowane */
+img {
+  display: block;
+  margin: 0 auto 15px auto;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 2px solid var(--primary);
+}
+
+/* Linki */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  color: var(--primary-2);
+  text-decoration: underline;
+}
+
+/* Kontakt - ważniejsze dane */
+section:nth-of-type(2) p {
+  font-weight: 600;
+}
+
+/* Doświadczenie */
+article {
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* ===== UMIEJĘTNOŚCI - CHIPY ===== */
+section:nth-of-type(4) ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+section:nth-of-type(4) li {
+  margin: 0;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #f1f5f9;
+  color: var(--text);
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+section:nth-of-type(4) li:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Stopka */
+footer {
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+}
